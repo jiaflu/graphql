@@ -10,3 +10,26 @@ type Book {
     author: Author
     publisher: String
 }
+
+type User {
+    id: Int
+    username: String
+    password: String
+    age: Int
+}
+
+# 添加用户信息输入参数
+input addUserInput {
+    id: Int!
+    username: String!
+    password: String!
+    age: Int
+}
+
+# 更新用户信息输入参数
+input updateUserInput {
+    id: Int!
+    username: String!
+    password: String!
+    age: Int
+}

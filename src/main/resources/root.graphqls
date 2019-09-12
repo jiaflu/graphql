@@ -1,4 +1,13 @@
 type Query {
     findBooks: [Book]
     findAuthor(id: Int!): Author
+
+    getUserById(id: Int!): User
+    listUser: [User]
+}
+
+type Mutation {
+    deleteUser(id: Int!): Boolean
+    #saveUser(user: addUserInput!): Boolean
+    #updateUser(user: updateUserInput!): Boolean
 }
