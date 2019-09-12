@@ -1,0 +1,4 @@
+type Query {
+    findBooks: [Book]
+    findAuthor(id: Int!): Author
+}
